@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/screen/Home.dart';
+import 'package:tiktok_clone/screen/MyHomePage.dart';
+import 'package:tiktok_clone/widget/bottom_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,11 +10,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'TikTok Clone',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -25,7 +26,22 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      home: DefaultTabController(
+        length: 5,
+        child: Scaffold(
+          body: TabBarView(
+            physics: NeverScrollableScrollPhysics(),
+            children: <Widget>[
+              Home(),
+              Home(),
+              MyHomePage(title: "타이틀"),
+              Home(),
+              Home()
+            ],
+          ),
+          bottomNavigationBar: Bottom(),
+        ),
+      ),
     );
   }
 }

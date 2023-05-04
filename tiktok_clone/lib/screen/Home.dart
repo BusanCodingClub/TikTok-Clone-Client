@@ -20,26 +20,26 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffffffff),
-      bottomNavigationBar: BottomNavigationBar(
-        items: flutterVizBottomNavigationBarItems
-            .map((FlutterVizBottomNavigationBarModel item) {
-          return BottomNavigationBarItem(
-            icon: Icon(item.icon),
-            label: item.label,
-          );
-        }).toList(),
-        backgroundColor: Color(0xff000000),
-        currentIndex: 0,
-        elevation: 8,
-        iconSize: 28,
-        selectedItemColor: Color(0xffffffff),
-        unselectedItemColor: Color(0x7f000000),
-        selectedFontSize: 9,
-        unselectedFontSize: 9,
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
-        onTap: (value) {},
-      ),
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: flutterVizBottomNavigationBarItems
+      //       .map((FlutterVizBottomNavigationBarModel item) {
+      //     return BottomNavigationBarItem(
+      //       icon: Icon(item.icon),
+      //       label: item.label,
+      //     );
+      //   }).toList(),
+      //   backgroundColor: Color(0xff000000),
+      //   currentIndex: 0,
+      //   elevation: 8,
+      //   iconSize: 28,
+      //   selectedItemColor: Color(0xffffffff),
+      //   unselectedItemColor: Color(0x7f000000),
+      //   selectedFontSize: 9,
+      //   unselectedFontSize: 9,
+      //   showSelectedLabels: true,
+      //   showUnselectedLabels: true,
+      //   onTap: (value) {},
+      // ),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
@@ -250,10 +250,8 @@ class Home extends StatelessWidget {
             Align(
               alignment: Alignment(1.0, 0.7),
               child: Container(
-                margin: EdgeInsets.all(0),
-                padding: EdgeInsets.all(0),
                 width: 40,
-                height: 200,
+                height: 250,
                 decoration: BoxDecoration(
                   color: Color(0x00000000),
                   shape: BoxShape.rectangle,
