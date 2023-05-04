@@ -3,43 +3,13 @@
 ///File download from FlutterViz- Drag and drop a tools. For more details visit https://flutterviz.io/
 
 import 'package:flutter/material.dart';
-import '../model/flutterViz_bottom_navigationBar_model.dart';
 import '../widget/flutterViz_video_player.dart';
 
 class Home extends StatelessWidget {
-  List<FlutterVizBottomNavigationBarModel> flutterVizBottomNavigationBarItems =
-      [
-    FlutterVizBottomNavigationBarModel(icon: Icons.home, label: "Home"),
-    FlutterVizBottomNavigationBarModel(icon: Icons.language, label: "Friends"),
-    FlutterVizBottomNavigationBarModel(icon: Icons.add_box, label: ""),
-    FlutterVizBottomNavigationBarModel(icon: Icons.mail, label: "Inbox"),
-    FlutterVizBottomNavigationBarModel(icon: Icons.person, label: "Profile")
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffffffff),
-      // bottomNavigationBar: BottomNavigationBar(
-      //   items: flutterVizBottomNavigationBarItems
-      //       .map((FlutterVizBottomNavigationBarModel item) {
-      //     return BottomNavigationBarItem(
-      //       icon: Icon(item.icon),
-      //       label: item.label,
-      //     );
-      //   }).toList(),
-      //   backgroundColor: Color(0xff000000),
-      //   currentIndex: 0,
-      //   elevation: 8,
-      //   iconSize: 28,
-      //   selectedItemColor: Color(0xffffffff),
-      //   unselectedItemColor: Color(0x7f000000),
-      //   selectedFontSize: 9,
-      //   unselectedFontSize: 9,
-      //   showSelectedLabels: true,
-      //   showUnselectedLabels: true,
-      //   onTap: (value) {},
-      // ),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
