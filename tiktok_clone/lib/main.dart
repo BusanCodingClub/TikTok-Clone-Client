@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_clone/screen/Friends.dart';
 import 'package:tiktok_clone/screen/Home.dart';
+import 'package:tiktok_clone/screen/Inbox.dart';
 import 'package:tiktok_clone/screen/MyHomePage.dart';
+import 'package:tiktok_clone/screen/Profile.dart';
 import 'package:tiktok_clone/widget/bottom_bar.dart';
 
 void main() {
@@ -33,10 +36,10 @@ class MyApp extends StatelessWidget {
             physics: NeverScrollableScrollPhysics(),
             children: <Widget>[
               Home(),
-              Home(),
+              Friends(),
               MyHomePage(title: "타이틀"),
-              Home(),
-              Home()
+              Inbox(),
+              Profile()
             ],
           ),
           bottomNavigationBar: Bottom(),
