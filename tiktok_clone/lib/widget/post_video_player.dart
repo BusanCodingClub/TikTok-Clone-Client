@@ -21,8 +21,7 @@ class _PostVideoPlayerState extends State<PostVideoPlayer> {
         videoPlayerOptions: VideoPlayerOptions(mixWithOthers: true)
     )
       ..initialize().then((_) {
-        // setState(() {});
-        _controller.play();
+        setState(() {});
       });
   }
 
