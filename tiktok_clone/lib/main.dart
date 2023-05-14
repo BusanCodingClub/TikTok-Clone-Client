@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiktok_clone/screen/Friends.dart';
+// import 'package:tiktok_clone/screen/Home_b.dart';
 import 'package:tiktok_clone/screen/Home.dart';
 import 'package:tiktok_clone/screen/Inbox.dart';
 import 'package:tiktok_clone/screen/MyHomePage.dart';
